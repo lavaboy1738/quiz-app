@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="quiz">
@@ -12,42 +14,39 @@
                 <div class="quiz__question">
                     Best Rapper Alive?
                 </div>
-                <div class="quiz__tracker">
-                    1 of 7
-                </div>
+                <div class="quiz__instructions">Pick a choice from below:</div>
                 <div class="quiz__progress">
                     <div class="quiz__progress-inner"></div>
                 </div>
-                <div class="quiz__instructions">Pick a choice from below:</div>
+                <div class="quiz__tracker">
+                    1 of 7
+                </div>
             </div>
             <div class="quiz__choices">
                 <div class="quiz__choice">
                     <input type="radio" name="choice" class="quiz__input" id="choice0">
-                    <label for="choice0" class="quiz__choice-label">Eminem</label>
-                    <i></i>
+                    <label for="choice0" class="quiz__choice-label"><span>Eminem</span></label>
                 </div>
                 <div class="quiz__choice">
                     <input type="radio" name="choice" class="quiz__input" id="choice1">
-                    <label for="choice1" class="quiz__choice-label">Marshall Mathers</label>
-                    <i></i>
+                    <label for="choice1" class="quiz__choice-label"><span>Marshall Mathers</span></label>
                 </div>
                 <div class="quiz__choice">
                     <input type="radio" name="choice" class="quiz__input" id="choice2">
-                    <label for="choice2" class="quiz__choice-label">Slim Shady</label>
-                    <i></i>
+                    <label for="choice2" class="quiz__choice-label"><span>Slim Shady</span></label>
                 </div>
                 <div class="quiz__choice">
                     <input type="radio" name="choice" class="quiz__input" id="choice3">
-                    <label for="choice3" class="quiz__choice-label">Bunny Rabbit</label>
-                    <i></i>
+                    <label for="choice3" class="quiz__choice-label"><span>Bunny Rabbit</span></label>
                 </div>
             </div>
             <div class="quiz__buttons">
-                <button class="quiz__btn">Next Question</button>
-                <button class="quiz__btn">Restart Quiz</button>
+                <button class="quiz__btn">Next</button>
+                <button class="quiz__btn">Restart</button>
             </div>
-            <div class="footer"><a href="">Made by lavaboy1738</a></div>
         </div>
     </div>
+    <a href="https://github.com/lavaboy1738/quiz-app" class="footer" target="_blank">Made by lavaboy1738 <i class="fab fa-github"></i></a>
+    <script src="https://kit.fontawesome.com/d961edb034.js" crossorigin="anonymous"></script>
 </body>
 </html>
