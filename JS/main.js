@@ -43,7 +43,7 @@ const App = (()=> {
     )
 
     const q6 = new Question(
-        "Running through the ____ with my woes.",
+        "I was running through the ______ with my woes.",
         ["city", "streets", "mall", "six"],
         3
     )
