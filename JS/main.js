@@ -90,13 +90,18 @@ const App = (()=> {
     }
 
     const disposeElements = () =>{
-        quizChoices.style.opacity = "0"
-        nextBtn.style.display = "none"
+        const  elements = [quizChoices, nextBtn, quizProgress.parentElement, quizTracker]
+        for(let element of elements){
+            element.style.display = "none"
+        }
     }
 
     const restoreElements = () =>{
-        quizChoices.style.opacity = "1"
-        nextBtn.style.display = "unset"
+        const elements = [nextBtn, quizProgress.parentElement, quizTracker]
+        for(let element of elements){
+            element.style.display = "block"
+        }
+        quizChoices.style.display = "flex"
     }
 
     const renderQuiz = () =>{
