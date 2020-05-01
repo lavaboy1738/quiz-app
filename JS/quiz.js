@@ -1,6 +1,6 @@
 export default function Quiz(questions){
     this.questions = questions;
-    this.totalScore = questions.length;
+    this.totalScore = questions.length
     this.currentScore = 0;
     this.currentQuestionIndex = 0;
 }
@@ -13,12 +13,13 @@ Quiz.prototype.getFinalScore = function(){
     return `${this.currentScore}/${this.totalScore}`
 }
 
-Quiz.prototype.getFinalPercentage = function(){
-    return this.currentScore/this.totalScore;
-}
-
 Quiz.prototype.nextQuestion = function(){
     this.currentQuestionIndex++;
+}
+
+Quiz.prototype.restartQuiz = function(){
+    this.currentScore = 0;
+    this.currentQuestionIndex = 0;
 }
 
 Quiz.prototype.quizEnded = function(){

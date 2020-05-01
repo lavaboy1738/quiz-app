@@ -48,8 +48,9 @@ body{
 
 .quiz__progress-inner{
     height: 100%;
-    width: 60%;
-    background-color: var(--color4)
+    width: 0%;
+    background-color: var(--color4);
+    transition: 1s all ease;
 }
 
 .quiz__tracker{
@@ -133,6 +134,7 @@ input:checked + label>span{
 }
 
 .quiz__btn{
+    outline: none;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
